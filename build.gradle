@@ -26,6 +26,9 @@ dependencies {
     implementation "io.github.resilience4j:resilience4j-all:${resilience4jVersion}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+    implementation "io.github.resilience4j:resilience4j-micrometer:${resilience4jVersion}"
+    implementation "io.micrometer:micrometer-registry-prometheus"
+
     compileOnly 'org.projectlombok:lombok:1.18.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.0'
 }
